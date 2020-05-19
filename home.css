@@ -1,15 +1,15 @@
 <style>
-    table{
-      border: 2px solid black;
-      border-collapse: collapse;
-      width: 40%;
-    }
-    th,td{
-      border:1px solid black;
-      padding: 5px;
+    .head{
       text-align: center;
+      text-decoration: underline;
+      font: 30px Arial, sans-serif;
     }
-    td{
-      background-color: light blue;
+    .thead{
+      background-color: lightblue;
+      font-weight: bolder;
+    }
+    .row{
+      background-color: lightpink;
+      font-weight: bolder;
     }
 </style>

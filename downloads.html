@@ -3,46 +3,68 @@
       <meta name="author" content="Shibasis Dutt">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Webpage</title>
-        <link rel="stylesheet" href="home.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          <style>
+              .head{
+                text-align: center;
+                text-decoration: underline;
+                font: 30px Arial, sans-serif;
+                color:tomato;
+              }
+              .thead{
+                background-color: lightblue;
+                font-weight: bolder;
+              }
+              .row{
+                background-color: lightpink;
+                font-weight: bolder;
+              }
+          </style>
     </head>
     <body>
       <div class="text-center">
         <img class="py-3" src="purple_violet_blue_image.jpg" width="50%">
       </div>
       <div class="text-center">
-        <a href="index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Home</a>
-        <a href="product.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Products</a>
-        <a href="downloads.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Downloads</a>
-        <a href="contact.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Contact details</a>
-      </div>
-        <div class="text-center">
-          <p class=pl-3><strong>Download porduct leaflets</strong></p>
+        <div class= "py-3">
+          <a href="index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Home</a>
+          <a href="product.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Products</a>
+          <a href="downloads.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Downloads</a>
+          <a href="contact.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Contact details</a>
         </div>
-        <table>
+      </div>
+      <div class="head">
+          <p class="pl-3"><b>Download porduct leaflets</b></p>
+      </div>
+      <table class="table table-bordered">
+        <thead class="thead">
           <tr>
-            <th>Serial Number</th>
-            <th>Products - please click to view details</th>
+            <th scope="col">Serial Number</th>
+            <th scope="col">Please click to view product details</th>
           </tr>
+        </thead>
+        <tbody>
           <tr>
-            <td>1</td>
+            <th class="row">1</th>
             <td><a href="1 Starter.jpg">AC Starter</a></td>
           </tr>
           <tr>
-            <td>2</td>
+            <th class="row">2</th>
             <td><a href="2 Remote.jpg">Light and Fan Remote</a></td>
           </tr>
           <tr>
-            <td>3</td>
+            <th class="row">3</th>
             <td><a href="3 SP ACCL.jpg">Single Phase Clangeover-cum-loadlimiter Type-U303i</a></td>
           </tr>
           <tr>
-            <td>4</td>
+            <th class="row">4</th>
             <td><a href="4 UHNi.jpg">Three Phase Changeover-cum-loadlimiter Type-UXXHNi</a></td>
           </tr>
           <tr>
-            <td>5</td>
+            <th class="row">5</th>
             <td><a href="5 UNi.jpg">Three Phase Changeover-cum-loadlimiter Type-UXXNi</a></td>
           </tr>
+        </tbody>
+      </table>
     </body>
 </html>
